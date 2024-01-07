@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food-Accueil</title>
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/mystyle.css">
+    <script src="https://kit.fontawesome.com/d498f45440.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div style="background-image: url(images/rotini-8433250_640.jpg);background-size: cover;background-position: center;">
-        <address>
+        <!-- Section liens d'adresse et login register -->
+        <address style="position: relative;">
             <div class="contact-liens1">
-                <a href="mailto:ekoleleibrahim8@gmail.com">Foodmarket@gmail.com</a>
-                <a href="">10, Kinshasa | Mont-ngafula</a>
+                <a href="mailto:ekoleleibrahim8@gmail.com"><i class="fa-solid fa-envelope"></i>&nbsp;Foodmarket@gmail&com</a>
+                <a href="https://www.google.com/maps/place/Universit%C3%A9+de+Kinshasa,+Batiment+administratif+edik+siviy/@-4.4193916,15.3067986,17z/data=!4m14!1m7!3m6!1s0x1a6a3a1f0fced557:0x6bdb8199a0e5717!2sUniversit%C3%A9+de+Kinshasa,+Batiment+administratif+edik+siviy!8m2!3d-4.419397!4d15.3093735!16zL20vMGc5a2x5!3m5!1s0x1a6a3a1f0fced557:0x6bdb8199a0e5717!8m2!3d-4.419397!4d15.3093735!16zL20vMGc5a2x5?entry=ttu" target="_blank"><i class="fa-solid fa-location-dot"></i>&nbsp;10, Kinshasa | Mont-ngafula</a>
             </div>
             <div class="contact-liens2">
                 <a href="">Login</a> / 
                 <a href="">Register</a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></i></a>
             </div>
         </address>
+        <!-- Partie entete du site -->
         <header class="entete-page">
             <h1><a href="">F<span style="color: red;">o</span>od</a></h1>
             <nav>
@@ -27,15 +33,20 @@
                     <li><a href="#section-shop">Shop</a></li>
                     <li><a href="#section-other_items">News</a></li>
                     <li><a href="#section-team">Team</a></li>
-                    <li><a href="#section-other_items">Pages</a></li>
+                    <li><a href="#section-feedbacks">Pages</a></li>
                     <li><a href="">Contact</a></li>
+                    <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
 
-                    <li><a href="" class="book">BOOK A TABLE</a></li>
+                    <li><a href="" class="book">BOOK A TABLE &nbsp;<i class="fa-solid fa-arrow-right"></i></a></li>
                 </ul>
             </nav>
-        </header>    
+        </header> 
+
+
+        <!-- SECTION HOME     -->
         <section id="section-home">
-            <h2><span>STAY CHEESY AND </span><br>
+            <h2><span style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">STAY CHEESY AND </span><br>
                 KEEP EATING DELICIOUS FOOD
             </h2>
             <p class="white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus optio excepturi, porro voluptate omnis, <br>
@@ -47,7 +58,7 @@
         </section>
     </div>   
 
-
+    <!-- CONTAINER SERVICES -->
     <div id="container-services">
         <section class="services" style="background-image: url(images/Speed.ico);">
             <h3>Fast foods</h3>
@@ -68,13 +79,12 @@
         <div class="clear"></div>
     </div>    
 
-
+    <!-- SECTION SHOP -->
     <section id="section-shop">
         <header style="text-align: center;">
             <p style="color: #121619;">BEST FOOD</p>
             <h2>Our Popular Food Items</h2> 
         </header>
-
         <div>
             <article>
                 <p><img src="images/pizza-3010062_1920.jpg" alt="plat pizza" style="width: 100%;border-radius: 10px 10px 5px 5px;"></p>
@@ -83,6 +93,9 @@
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
                     <div class="red">$10.00</div>
+                    <div class="etoiles">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
                 </div>
                 <button>Add to card</button>
             </article>
@@ -92,7 +105,10 @@
                     <h4>Pizza with meats</h4>
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
-                    <div class="red">$15.00</div>
+                        <div class="red">$15.00</div>
+                        <div class="etoiles">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
                 </div>
                 <button>Add to card</button>
             </article>
@@ -103,6 +119,9 @@
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
                     <div class="red">$10.00</div>
+                    <div class="etoiles">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
                 </div>
                 <button>Add to card</button>
             </article>
@@ -113,6 +132,9 @@
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
                     <div class="red">$25.00</div>
+                    <div class="etoiles">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
                 </div>
                 <button>Add to card</button>
             </article>
@@ -128,6 +150,9 @@
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
                     <div class="red">$10.00</div>
+                    <div class="etoiles">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
                 </div>
                 <button>Add to card</button>
             </article>
@@ -138,6 +163,9 @@
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
                     <div class="red">$2.00</div>
+                    <div class="etoiles">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
                 </div>
                 <button>Add to card</button>
             </article>
@@ -148,6 +176,9 @@
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
                     <div class="red">$5.00</div>
+                    <div class="etoiles">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
                 </div>
                 <button>Add to card</button>
             </article>
@@ -158,6 +189,9 @@
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
                     <div class="red">$2.00</div>
+                    <div class="etoiles">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
                 </div>
                 <button>Add to card</button>
             </article>
@@ -166,7 +200,7 @@
         <div class="clear"></div>
     </section>
 
-
+    <!-- SECTION OTHER ITEMS/ARTICLES -->
     <section id="section-other_items">
         <header>
             <h2>OTHER NEWS ITEMS</h2>
@@ -242,7 +276,7 @@
                     <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius doloribus exercitationem fugiat illo necessitatibus voluptas! Illo error neque dolore reiciendis similique molestiae sed culpa natus maxime excepturi. Accusamus, amet exercitationem.</p>
                 </div>
             </article>
-            <article>
+            <article id="font-noire">
                 <div>
                     <img src="images/news-items/apple-cake-3382722_1280.jpg" alt="plat apple" style="width: 100%;height: 100%;">
                 </div>
@@ -315,7 +349,7 @@
         </div>
     </section>   
 
-
+    <!-- SECTION TEAM -->
     <section id="section-team">
         <header>
             <h2>OUR EXPERT CHEFS</h2>
@@ -371,5 +405,70 @@
     </section>
         
     
+    <!-- SECTION FEEDBACKS -->
+    <section id="section-feedbacks">
+        <header>
+            <h2>OUR CUSTOMER FEEDBACKS</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                Nobis similique dolore ab culpa optio sequi dolores. Impedit, <br> necessitatibus, voluptates totam eaque repellendus 
+                placeat sit quidem pariatur iure enim labore nisi.</p>
+        </header>
+
+        <div style="background-color: #dedede;">
+            <article>
+                <div style="padding: 10px;">
+                    <div class="white-quote red-quote"><i class="fa-solid fa-quote-right"></i></div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At placeat tempora nam dolorem, necessitatibus nulla voluptatem ab tenetur laborum reprehenderit, libero facere expedita eos minus modi sit ut adipisci nemo?</p>
+                    <div style="display: flex;margin-top: 20px;">
+                        <img src="images/customers/businesspeople-working-together.jpg" alt="profil customer 1" style="height: 40px;border-radius: 5px;border: 2px solid white;">
+                        <div style="margin-left: 10px;">
+                            <h5>Peter Smith</h5>
+                            <div>Customer in America</div>
+                        </div>
+                        <div class="etoiles etoile">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="black">
+                <div style="padding: 10px;">
+                    <div class="white-quote"><i class="fa-solid fa-quote-right"></i></div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At placeat tempora nam dolorem, necessitatibus nulla voluptatem ab tenetur laborum reprehenderit, libero facere expedita eos minus modi sit ut adipisci nemo?</p>
+                    <div style="display: flex;margin-top: 20px;">
+                        <img src="images/customers/happy-call-center-agent-using-computer-while-communicating-with-clients-working-office.jpg" alt="profil customer 1" style="height: 40px;border-radius: 5px;border: 2px solid white;">
+                        <div style="margin-left: 10px;">
+                            <h5>Peter Smith</h5>
+                            <div>Customer in Paris</div>
+                        </div>
+                        <div class="etoile white-quote">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div style="padding: 10px;">
+                    <div class="white-quote red-quote"><i class="fa-solid fa-quote-right"></i></div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At placeat tempora nam dolorem, necessitatibus nulla voluptatem ab tenetur laborum reprehenderit, libero facere expedita eos minus modi sit ut adipisci nemo?</p>
+                    <div style="display: flex;margin-top: 20px;">
+                        <img src="images/customers/team-working-together-project.jpg" alt="profil customer 1" style="height: 40px;border-radius: 5px;border: 2px solid white;">
+                        <div style="margin-left: 10px;">
+                            <h5>Peter Smith</h5>
+                            <div>Customer in Allemagne</div>
+                        </div>
+                        <div class="etoiles etoile">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="clear"></div>
+    </section>
+    <!-- PARTIE FOOTER PAGE -->
+    <footer>
+        <p>Copyright &copy; 2024 | Tous les droits reservées</p>
+    </footer>
 </body>
 </html>
