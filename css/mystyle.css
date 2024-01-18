@@ -434,7 +434,8 @@ footer{
     }
     /* SECTION OTHER ITEMS/ARTICLES */
     section#section-other_items article div img{
-        width: 100%;
+        width: 1500px;
+        height: 400px;
     }
     section#section-other_items div.grid-others_items{
         display: grid;
