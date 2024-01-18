@@ -260,6 +260,7 @@ section#section-other_items article div img{
 section#section-other_items div article{
     background-color: rgba(250, 235, 215, 0.511);
     display: flex;
+    justify-content: center;
     margin: 20px;
 }
 section#section-other_items div article#font-noire{
@@ -353,7 +354,7 @@ footer{
 @media screen and (max-width:810px) {
     /* SECTION HOME */
     #section-home{ 
-        padding: 50px;
+        padding: 50px 20px;
     }
     #section-home p.white{
         color: rgb(245, 242, 242);
@@ -375,16 +376,19 @@ footer{
 }
 
 @media screen and (max-width:1040px) {
-    /* SECTION SHOP */
     section#section-shop,section#section-other_items,section#section-team,section#section-feedbacks{
         padding: 20px 30px;
     }
 }
 
 @media screen and (max-width:800px) {
+    /* SECTION SHOP */
+    section#section-shop,section#section-other_items,section#section-team,section#section-feedbacks{
+        padding: 20px;
+    }
     /* CONTAINER SERVICES */
     #container-services{
-        padding: 50px;
+        padding: 50px 20px;
         display: grid;
         grid-template-columns: 100%;  
         justify-content: center;
@@ -413,6 +417,34 @@ footer{
     }
     /* SECTION FEEDBACKS */
     section#section-feedbacks #grid-feedbacks{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    /* SECTION SHOP */
+    section#section-shop .grid-article{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+    /* SECTION OTHER ITEMS/ARTICLES */
+    section#section-other_items article div img{
+        width: 100%;
+    }
+    section#section-other_items div.grid-others_items{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-evenly;
+        
+    }
+    /* SECTION TEAM */
+    section#section-team #grid-team
+    {   
         display: grid;
         grid-template-columns: 100%;
         justify-content: space-evenly;
