@@ -420,7 +420,7 @@ footer{
     }
     /* Entete de la page */
     header nav{
-        margin-right: 20px;
+        margin-right: 0;
         position: fixed;
         bottom: 0;
         left: 0;
@@ -432,7 +432,7 @@ footer{
     }
     header nav ul{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         text-align: center;
     }
     header nav ul li{
@@ -449,8 +449,7 @@ footer{
         display: block;
     }
     ul#nav-mobile li a{
-        padding: 20px;
-        width: 100%;
+        
     }
 }
 
