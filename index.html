@@ -12,7 +12,11 @@
     <div style="background-image: url(images/rotini-8433250_640.jpg);background-size: cover;background-position: center;">
         <!-- Section liens d'adresse et login register -->
         <address>
-            <div class="contact-liens1">
+            <div class="contact-liens1 small-screen">
+                <a href="mailto:ekoleleibrahim8@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.google.com/maps/place/Universit%C3%A9+de+Kinshasa,+Batiment+administratif+edik+siviy/@-4.4193916,15.3067986,17z/data=!4m14!1m7!3m6!1s0x1a6a3a1f0fced557:0x6bdb8199a0e5717!2sUniversit%C3%A9+de+Kinshasa,+Batiment+administratif+edik+siviy!8m2!3d-4.419397!4d15.3093735!16zL20vMGc5a2x5!3m5!1s0x1a6a3a1f0fced557:0x6bdb8199a0e5717!8m2!3d-4.419397!4d15.3093735!16zL20vMGc5a2x5?entry=ttu" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+            </div>
+            <div class="contact-liens1 large-screen">
                 <a href="mailto:ekoleleibrahim8@gmail.com"><i class="fa-solid fa-envelope"></i>&nbsp;Foodmarket@gmail&com</a>
                 <a href="https://www.google.com/maps/place/Universit%C3%A9+de+Kinshasa,+Batiment+administratif+edik+siviy/@-4.4193916,15.3067986,17z/data=!4m14!1m7!3m6!1s0x1a6a3a1f0fced557:0x6bdb8199a0e5717!2sUniversit%C3%A9+de+Kinshasa,+Batiment+administratif+edik+siviy!8m2!3d-4.419397!4d15.3093735!16zL20vMGc5a2x5!3m5!1s0x1a6a3a1f0fced557:0x6bdb8199a0e5717!8m2!3d-4.419397!4d15.3093735!16zL20vMGc5a2x5?entry=ttu" target="_blank"><i class="fa-solid fa-location-dot"></i> 10,Kinshasa | Mont-ngafula</a>
             </div>
@@ -28,21 +32,27 @@
         <header class="entete-page">
             <h1><a href="">F<span style="color: red;">o</span>od</a></h1>
             <nav>
-                <ul>
+                <ul id="nav-largescreen">
                     <li><a href="#section-home">Home</a></li>
                     <li><a href="#section-shop">Shop</a></li>
                     <li><a href="#section-other_items">News</a></li>
                     <li><a href="#section-team">Team</a></li>
                     <li><a href="#section-feedbacks">Pages</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#section-contact">Contact</a></li>
                     <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
                     <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
-
                     <li><a href="" class="book">BOOK A TABLE &nbsp;<i class="fa-solid fa-arrow-right"></i></a></li>
+                </ul>
+                <ul id="nav-mobile">
+                    <li><a href="#section-home"><i class="fa-solid fa-house"></i></a></li>
+                    <li><a href="#section-shop"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li><a href="#section-other_items"><i class="fa-solid fa-cart-plus"></i></a></li>
+                    <li><a href="#section-team"><i class="fa-solid fa-people-group"></i></a></li>
+                    <li><a href="#section-feedbacks"><i class="fa-solid fa-comment"></i></a></li>
+                    <li><a href="#section-contact"><i class="fa-solid fa-address-card"></i></a></li>
                 </ul>
             </nav>
         </header> 
-
 
         <!-- SECTION HOME     -->
         <section id="section-home">
@@ -209,7 +219,7 @@
                     <img src="images/news-items/apple-cake-3382722_1280.jpg" alt="plat apple-cake">
                 </div>
                 <div style="padding: 20px 10px;">
-                    <div style="display: flex;justify-content: space-between;margin-bottom: 10px;">
+                    <div class="flex-others_items">
                         <h4 class="price">Plat apple-cake</h4>
                         <p class="price">$5.00</p>
                     </div>
@@ -221,7 +231,7 @@
                     <img src="images/news-items/eclair-3366430_1280.jpg" alt="plat eclair">
                 </div>
                 <div style="padding: 20px 10px;">
-                    <div style="display: flex;justify-content: space-between;margin-bottom: 10px;">
+                    <div class="flex-others_items">
                         <h4 class="price">Plat apple-cake</h4>
                         <p class="price">$2.00</p>
                     </div>
@@ -233,7 +243,7 @@
                     <img src="images/news-items/meal-2069021_1280.jpg" alt="plat meal">
                 </div>
                 <div style="padding: 20px 10px;">
-                    <div style="display: flex;justify-content: space-between;margin-bottom: 10px;">
+                    <div class="flex-others_items">
                         <h4 class="price">Plat apple-cake</h4>
                         <p class="price">$5.00</p>
                     </div>
@@ -245,7 +255,7 @@
                     <img src="images/news-items/pancakes-5989136_1280.jpg" alt="plat Pancakes">
                 </div>
                 <div style="padding: 20px 10px;">
-                    <div style="display: flex;justify-content: space-between;margin-bottom: 10px;">
+                    <div class="flex-others_items">
                         <h4 class="price">Plat apple-cake</h4>
                         <p class="price">$3.00</p>
                     </div>
@@ -257,7 +267,7 @@
                     <img src="images/news-items/yogurt-1442034_1280.jpg" alt="yogurt">
                 </div>
                 <div style="padding: 20px 10px;">
-                    <div style="display: flex;justify-content: space-between;margin-bottom: 10px;">
+                    <div class="flex-others_items">
                         <h4 class="price">Plat apple-cake</h4>
                         <p class="price">$5.00</p>
                     </div>
@@ -269,7 +279,7 @@
                     <img src="images/news-items/apple-cake-3382722_1280.jpg" alt="plat apple">
                 </div>
                 <div style="padding: 20px 10px;">
-                    <div style="display: flex;justify-content: space-between;margin-bottom: 10px;">
+                    <div class="flex-others_items">
                         <h4 class="price">Plat apple-cake</h4>
                         <p class="price">$3.00</p>
                     </div>
@@ -288,7 +298,7 @@
                             <img src="images/news-items/yogurt-1442034_1280.jpg" alt="yogurt">
                         </div>
                         <div style="padding: 20px 10px;">
-                            <div style="display: flex;justify-content: space-between;margin-bottom: 10px;">
+                            <div class="flex-others_items">
                                 <h4 class="price">Plat apple-cake</h4>
                                 <p class="price">$5.00</p>
                             </div>
@@ -300,7 +310,7 @@
                             <img src="images/news-items/apple-cake-3382722_1280.jpg" alt="plat apple">
                         </div>
                         <div style="padding: 20px 10px;">
-                            <div style="display: flex;justify-content: space-between;margin-bottom: 10px;">
+                            <div class="flex-others_items">
                                 <h4 class="price">Plat apple-cake</h4>
                                 <p class="price">$3.00</p>
                             </div>
@@ -314,7 +324,7 @@
                             <img src="images/news-items/yogurt-1442034_1280.jpg" alt="yogurt">
                         </div>
                         <div style="padding: 20px 10px;">
-                            <div style="display: flex;justify-content: space-between;margin-bottom: 10px;">
+                            <div class="flex-others_items">
                                 <h4 class="price">Plat apple-cake</h4>
                                 <p class="price">$5.00</p>
                             </div>
@@ -326,7 +336,7 @@
                             <img src="images/news-items/apple-cake-3382722_1280.jpg" alt="plat apple">
                         </div>
                         <div style="padding: 20px 10px;">
-                            <div style="display: flex;justify-content: space-between;margin-bottom: 10px;">
+                            <div class="flex-others_items">
                                 <h4 class="price">Plat apple-cake</h4>
                                 <p class="price">$3.00</p>
                             </div>
@@ -457,7 +467,7 @@
         </div>
     </section>
     <!-- PARTIE FOOTER PAGE -->
-    <footer>
+    <footer id="section-contact">
         <p>Copyright &copy; 2024 | Tous les droits reservées</p>
         <div class="contact-footer">
             <a href=""><i class="fa-brands fa-facebook"></i></a>
