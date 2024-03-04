@@ -157,6 +157,7 @@ ul#nav-mobile{
 /* SECTION HOME */
 #section-home{ 
     padding: 100px 50px;
+    opacity: 0.9;
 }
 #section-home h2{
     font-size: 40px;
@@ -164,9 +165,10 @@ ul#nav-mobile{
     margin-bottom: 30px;
 }
 #section-home p.white{
-    color: rgb(245, 242, 242);
+    color: rgb(236, 236, 236);
     margin-bottom: 40px;
     font-size: 1.125em;
+    
 }
 #section-home a{
     text-decoration: none;
@@ -449,7 +451,7 @@ footer{
         display: block;
     }
     ul#nav-mobile li a{
-        
+        padding: 10px;
     }
 }
 
