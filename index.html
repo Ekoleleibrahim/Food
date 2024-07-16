@@ -7,9 +7,14 @@
     <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/mystyle.css">
     <script src="https://kit.fontawesome.com/d498f45440.js" crossorigin="anonymous"></script>
+    <meta property="og:title" content="Food">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/live-page.jpeg">
+    <meta property="og:url" content="https://ekoleleibrahim.github.io/Food/">
+    <meta property="og:locale" content="en_Us">
 </head>
 <body>
-    <div style="background-image: url(images/rotini-8433250_640.jpg);background-size: cover;background-position: center;">
+    <div>
         <!-- Section liens d'adresse et login register -->
         <address>
             <div class="contact-liens1 small-screen">
@@ -30,7 +35,7 @@
         </address>
         <!-- Partie entete du site -->
         <header class="entete-page">
-            <h1><a href="">F<span style="color: red;">o</span>od</a></h1>
+            <a href="" class="title">F<span style="color: red;">o</span>od</a>
             <nav>
                 <ul id="nav-largescreen">
                     <li><a href="#section-home">Home</a></li>
@@ -43,21 +48,31 @@
                     <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <li><a href="" class="book">BOOK A TABLE &nbsp;<i class="fa-solid fa-arrow-right"></i></a></li>
                 </ul>
-                <ul id="nav-mobile">
-                    <li><a href="#section-home"><i class="fa-solid fa-house"></i></a></li>
-                    <li><a href="#section-shop"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    <li><a href="#section-other_items"><i class="fa-solid fa-cart-plus"></i></a></li>
-                    <li><a href="#section-team"><i class="fa-solid fa-people-group"></i></a></li>
-                    <li><a href="#section-feedbacks"><i class="fa-solid fa-comment"></i></a></li>
-                </ul>
             </nav>
+            <div id="nav-mobile">
+                <input type="checkbox" id="burger">
+                <label for="burger" class="btn-burger">|||</label>
+                <ul class="sous-nav">
+                    <li><a href="#section-home">Home</a></li>
+                    <li><a href="#section-shop">Shop</a></li>
+                    <li><a href="#section-other_items">News</a></li>
+                    <li><a href="#section-team">Team</a></li>
+                    <li><a href="#section-feedbacks">Pages</a></li>
+                    <li><a href="#section-contact">Contact</a></li>
+                    <li><a href="" class="book">BOOK A TABLE &nbsp;<i class="fa-solid fa-arrow-right"></i></a></li>
+                    <div>
+                        <a href="" class="login">Login</a>
+                        <a href="" class="register">Register</a>
+                    </div>
+                </ul>
+            </div>
         </header> 
 
         <!-- SECTION HOME     -->
         <section id="section-home">
-            <h2><span style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">STAY CHEESY AND </span><br>
+            <h1><span style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">STAY CHEESY AND </span><br>
                 KEEP EATING DELICIOUS FOOD
-            </h2>
+            </h1>
             <p class="white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus optio excepturi, porro voluptate omnis, <br>
             earum magnam fuga numquam, cum odio atque? Ea eaque nostrum sapiente aspernatur, accusantium vel enim asperiores!</p>
             <div>
@@ -97,7 +112,7 @@
         <div class="grid-article grid1">
             <article>
                 <p><img src="images/pizza-3010062_1920.jpg" alt="plat pizza" style="width: 100%;border-radius: 10px 10px 5px 5px;"></p>
-                <div style="padding: 20px 10px;">
+                <div class="content-article">
                     <h4>Pizza with Tomato</h4>
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
@@ -110,7 +125,7 @@
             </article>
             <article>
                 <p><img src="images/pizza-712667_1920.jpg" alt="plat pizza" style="width: 100%;border-radius: 10px 10px 5px 5px;"></p>
-                <div style="padding: 20px 10px;">
+                <div class="content-article">
                     <h4>Pizza with meats</h4>
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
@@ -123,7 +138,7 @@
             </article>
             <article>
                 <p><img src="images/pizza-3010062_1920.jpg" alt="plat pizza" style="width: 100%;border-radius: 10px 10px 5px 5px;"></p>
-                <div style="padding: 15px 10px;">
+                <div class="content-article">
                     <h4>Eggs Benedict Burger</h4>
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
@@ -136,7 +151,7 @@
             </article>
             <article>
                 <p><img src="images/tacos-4540402_1920.jpg" alt="plat taco" style="width: 100%;border-radius: 10px 10px 5px 5px;"></p>
-                <div style="padding: 20px 10px;">
+                <div class="content-article">
                     <h4>Taco Tuesday</h4>
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
@@ -147,11 +162,9 @@
                 </div>
                 <button>Add to card</button>
             </article>
-        </div>
-        <div class="grid-article">
             <article>
                 <p><img src="images/hamburger-1553287_1920.jpg" alt="plat hamburger" style="width: 100%;border-radius: 10px 10px 5px 5px;"></p>
-                <div style="padding: 20px 10px;">
+                <div class="content-article">
                     <h4>Hamburger with meats</h4>
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
@@ -164,7 +177,7 @@
             </article>
             <article>
                 <p><img src="images/sausage-1341091_1920.jpg" alt="plat sausage" style="width: 100%;border-radius: 10px 10px 5px 5px;"></p>
-                <div style="padding: 20px 10px;">
+                <div class="content-article">
                     <h4>Milk Peace and Meats</h4>
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
@@ -177,7 +190,7 @@
             </article>
             <article>
                 <p><img src="images/hamburger-1553287_1920.jpg" alt="plat burger" style="width: 100%;border-radius: 10px 10px 5px 5px;"></p>
-                <div style="padding: 20px 10px;">
+                <div class="content-article">
                     <h4>Pancakes</h4>
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
@@ -190,7 +203,7 @@
             </article>
             <article>
                 <p><img src="images/bread-1284438_1920.jpg" alt="plat bread" style="width: 100%;border-radius: 10px 10px 5px 5px;"></p>
-                <div style="padding: 20px 10px;">
+                <div class="content-article">
                     <h4>Bread Tuesday</h4>
                     <p>Lorem ipsum dolor sit</p>
                     <p>Lorem ipsum</p>
@@ -217,7 +230,7 @@
                 <div>
                     <img src="images/news-items/apple-cake-3382722_1280.jpg" alt="plat apple-cake">
                 </div>
-                <div style="padding: 20px 10px;">
+                <div class="content-article">
                     <div class="flex-others_items">
                         <h4 class="price">Plat apple-cake</h4>
                         <p class="price">$5.00</p>
@@ -229,7 +242,7 @@
                 <div>
                     <img src="images/news-items/eclair-3366430_1280.jpg" alt="plat eclair">
                 </div>
-                <div style="padding: 20px 10px;">
+                <div class="content-article">
                     <div class="flex-others_items">
                         <h4 class="price">Plat apple-cake</h4>
                         <p class="price">$2.00</p>
@@ -241,7 +254,7 @@
                 <div>
                     <img src="images/news-items/meal-2069021_1280.jpg" alt="plat meal">
                 </div>
-                <div style="padding: 20px 10px;">
+                <div class="content-article">
                     <div class="flex-others_items">
                         <h4 class="price">Plat apple-cake</h4>
                         <p class="price">$5.00</p>
@@ -253,7 +266,7 @@
                 <div>
                     <img src="images/news-items/pancakes-5989136_1280.jpg" alt="plat Pancakes">
                 </div>
-                <div style="padding: 20px 10px;">
+                <div class="content-article">
                     <div class="flex-others_items">
                         <h4 class="price">Plat apple-cake</h4>
                         <p class="price">$3.00</p>
@@ -265,7 +278,7 @@
                 <div>
                     <img src="images/news-items/yogurt-1442034_1280.jpg" alt="yogurt">
                 </div>
-                <div style="padding: 20px 10px;">
+                <div class="content-article">
                     <div class="flex-others_items">
                         <h4 class="price">Plat apple-cake</h4>
                         <p class="price">$5.00</p>
@@ -277,7 +290,7 @@
                 <div>
                     <img src="images/news-items/apple-cake-3382722_1280.jpg" alt="plat apple">
                 </div>
-                <div style="padding: 20px 10px;">
+                <div class="content-article">
                     <div class="flex-others_items">
                         <h4 class="price">Plat apple-cake</h4>
                         <p class="price">$3.00</p>
@@ -296,7 +309,7 @@
                         <div>
                             <img src="images/news-items/yogurt-1442034_1280.jpg" alt="yogurt">
                         </div>
-                        <div style="padding: 20px 10px;">
+                        <div class="content-article">
                             <div class="flex-others_items">
                                 <h4 class="price">Plat apple-cake</h4>
                                 <p class="price">$5.00</p>
@@ -308,7 +321,7 @@
                         <div>
                             <img src="images/news-items/apple-cake-3382722_1280.jpg" alt="plat apple">
                         </div>
-                        <div style="padding: 20px 10px;">
+                        <div class="content-article">
                             <div class="flex-others_items">
                                 <h4 class="price">Plat apple-cake</h4>
                                 <p class="price">$3.00</p>
@@ -316,13 +329,11 @@
                             <p style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere quidem aspernatur placeat, quaerat adipisci ut explicabo modi nisi? Earum, deserunt. Animi sunt eveniet cumque, nisi ratione praesentium. Accusamus, eum odit!</p>
                         </div>
                     </article>
-                </div>
-                <div class="grid-others_items">
                     <article>
                         <div>
                             <img src="images/news-items/yogurt-1442034_1280.jpg" alt="yogurt">
                         </div>
-                        <div style="padding: 20px 10px;">
+                        <div class="content-article">
                             <div class="flex-others_items">
                                 <h4 class="price">Plat apple-cake</h4>
                                 <p class="price">$5.00</p>
@@ -334,7 +345,7 @@
                         <div>
                             <img src="images/news-items/apple-cake-3382722_1280.jpg" alt="plat apple">
                         </div>
-                        <div style="padding: 20px 10px;">
+                        <div class="content-article">
                             <div class="flex-others_items">
                                 <h4 class="price">Plat apple-cake</h4>
                                 <p class="price">$3.00</p>
@@ -419,11 +430,13 @@
                 <div style="padding: 10px;">
                     <div class="white-quote red-quote"><i class="fa-solid fa-quote-right"></i></div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At placeat tempora nam dolorem, necessitatibus nulla voluptatem ab tenetur laborum reprehenderit, libero facere expedita eos minus modi sit ut adipisci nemo?</p>
-                    <div style="display: flex;margin-top: 20px;">
-                        <img src="images/customers/businesspeople-working-together.jpg" alt="profil customer 1" style="height: 40px;border-radius: 5px;border: 2px solid white;">
-                        <div style="margin-left: 10px;">
-                            <h5>Peter Smith</h5>
-                            <div>Customer in America</div>
+                    <div class="flex-feedbacks">
+                        <div class="flex-small">
+                            <img src="images/customers/businesspeople-working-together.jpg" alt="profil customer 1">
+                            <div style="margin-left: 10px;">
+                                <h5>Peter Smith</h5>
+                                <div>Customer in America</div>
+                            </div>
                         </div>
                         <div class="etoiles etoile">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -435,11 +448,13 @@
                 <div style="padding: 10px;">
                     <div class="white-quote"><i class="fa-solid fa-quote-right"></i></div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At placeat tempora nam dolorem, necessitatibus nulla voluptatem ab tenetur laborum reprehenderit, libero facere expedita eos minus modi sit ut adipisci nemo?</p>
-                    <div style="display: flex;margin-top: 20px;">
-                        <img src="images/customers/happy-call-center-agent-using-computer-while-communicating-with-clients-working-office.jpg" alt="profil customer 1" style="height: 40px;border-radius: 5px;border: 2px solid white;">
-                        <div style="margin-left: 10px;">
-                            <h5>Peter Smith</h5>
-                            <div>Customer in Paris</div>
+                    <div class="flex-feedbacks">
+                        <div class="flex-small">
+                            <img src="images/customers/happy-call-center-agent-using-computer-while-communicating-with-clients-working-office.jpg" alt="profil customer 1">
+                            <div style="margin-left: 10px;">
+                                <h5>Peter Smith</h5>
+                                <div>Customer in Paris</div>
+                            </div>
                         </div>
                         <div class="etoile white-quote">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
@@ -451,11 +466,13 @@
                 <div style="padding: 10px;">
                     <div class="white-quote red-quote"><i class="fa-solid fa-quote-right"></i></div>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At placeat tempora nam dolorem, necessitatibus nulla voluptatem ab tenetur laborum reprehenderit, libero facere expedita eos minus modi sit ut adipisci nemo?</p>
-                    <div style="display: flex;margin-top: 20px;">
-                        <img src="images/customers/team-working-together-project.jpg" alt="profil customer 1" style="height: 40px;border-radius: 5px;border: 2px solid white;">
-                        <div style="margin-left: 10px;">
-                            <h5>Peter Smith</h5>
-                            <div>Customer in Allemagne</div>
+                    <div class="flex-feedbacks">
+                        <div class="flex-small">
+                            <img src="images/customers/team-working-together-project.jpg" alt="profil customer 1">
+                            <div style="margin-left: 10px;">
+                                <h5>Peter Smith</h5>
+                                <div>Customer in Allemagne</div>
+                            </div>
                         </div>
                         <div class="etoiles etoile">
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
