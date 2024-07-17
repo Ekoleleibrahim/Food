@@ -100,6 +100,7 @@ address .contact-liens2 a.login,address .contact-liens2 a.register{
     background-color: #000000;
     padding: 8px 10px;
     border-radius: 3px;
+    transition: all .4s ease-in-out;
 }
 address .contact-liens2 a.login:hover,address .contact-liens2 a.register:hover{
     background-color: #fff;
@@ -575,5 +576,16 @@ footer{
         grid-template-columns: 100%;
         justify-content: center;
         gap: 30px 20px;
+    }
+    section{
+        animation: slider 1s ease-in-out;
+    }
+    @keyframes slider {
+        from{
+            transform: translateX(-1000px);
+        }
+        to{
+            transform: translateX(0);
+        }
     }
 }
