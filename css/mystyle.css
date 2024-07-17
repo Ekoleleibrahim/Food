@@ -421,13 +421,11 @@ section#section-feedbacks div article{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    gap: 10px;
     margin-top: 20px;
 }
 .flex-small{
     display: flex;
-}
-.etoile{
-    justify-self: flex-end;
 }
 section#section-feedbacks div article img{
     width: 50px;
@@ -496,14 +494,14 @@ footer{
     #container-services{
         padding: 50px 20px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
         gap: 10px;   
     }
 
-    /* SECTION SHOP */
-    section#section-shop .grid-article{
+     /* SECTION SHOP */
+     section#section-shop .grid-article{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
         gap: 30px 20px;
     }
@@ -524,7 +522,7 @@ footer{
     section#section-team #grid-team
     {   
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
         justify-content: space-evenly;
     }
 
@@ -540,36 +538,42 @@ footer{
     section#section-shop,section#section-other_items,section#section-team,section#section-feedbacks{
         padding: 50px 20px;
     }
-    /* SECTION SHOP */
-    section#section-shop .grid-article{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        gap: 30px 20px;
-    }
-}
 
-@media all and (max-width: 600px) {
     /* CONTAINER SERVICES */
     #container-services{
+        padding: 50px 20px;
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
         gap: 10px;   
     }
 
+    /* SECTION OTHER ITEMS/ARTICLES */
+    section#section-other_items div article{
+        background-color: rgba(250, 235, 215, 0.511);
+        display: flex;
+        flex-direction: column;
+    }
+    section#section-other_items article div img{
+        width: 100%;  
+        height: 250px;
+    }
+
+     /* SECTION TEAM */
+     section#section-team #grid-team
+     {   
+         display: grid;
+         grid-template-columns: 100%;
+         justify-content: space-evenly;
+     }
+}
+
+@media all and (max-width: 600px) {
+
     /* SECTION SHOP */
     section#section-shop .grid-article{
         display: grid;
         grid-template-columns: 100%;
         justify-content: center;
         gap: 30px 20px;
-    }
-
-    /* SECTION TEAM */
-    section#section-team #grid-team
-    {   
-        display: grid;
-        grid-template-columns: 100%;
-        justify-content: space-evenly;
     }
 }
